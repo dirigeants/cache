@@ -1,6 +1,6 @@
 import ava from 'ava';
-import util from '../dist';
+import { Cache } from '../dist';
 
-ava('sample test', (test): void => {
-	test.is(util(), 'bar');
+ava('tests can come later', (test): void => {
+	test.true(new Cache() instanceof Map);
 });
