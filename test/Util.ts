@@ -55,7 +55,7 @@ ava('find a value in the cache', (test) => {
 	const emptyResult = cache.findValue(() => false);
 	test.true(result === 'bar');
 	test.true(emptyResult === undefined);
-	test.notThrows(() => cache.findValue((_val, key) => key === 'second', cache))
+	test.notThrows(() => cache.findValue((_val, key) => key === 'second', cache));
 });
 
 ava('seeing if 2 caches are equal', (test) => {
@@ -77,14 +77,14 @@ ava('sweeping cache', (test) => {
 	// Test if the size returned is indeed 1
 	test.true(swooped === 1);
 	test.true(swoopedCache.equals(trueSwoopedCache));
-	test.notThrows(() => swoopedCache.sweep((val) => val === 'baz', cache))
+	test.notThrows(() => swoopedCache.sweep((val) => val === 'baz', cache));
 });
 
 ava('filtering the cache', (test) => {
 	const filteredCache2 = new Cache([['first', 'foo']]);
 	const filteredCache = cache.filter((val) => val === 'foo');
 	test.true(filteredCache.equals(filteredCache2));
-	test.notThrows(() => cache.filter((val) => val === 'foo', cache))
+	test.notThrows(() => cache.filter((val) => val === 'foo', cache));
 });
 
 ava('map the cache', (test) => {
@@ -117,7 +117,7 @@ ava('concat two cache instances', (test) => {
 });
 
 ava('sort the cache', (test) => {
-	const sortInited = [['first', 'foo'], ['second', 'bar'], ['third', 'baz'], ['first', 'foo'], ['second', 'bar'], ['third', 'baz']].sort()
+	const sortInited = [['first', 'foo'], ['second', 'bar'], ['third', 'baz'], ['first', 'foo'], ['second', 'bar'], ['third', 'baz']].sort();
 	const actualResult = new Cache(sortInited as Iterable<readonly[string, string]>);
 	const result = cache.sort();
 	test.true(actualResult.equals(result));
