@@ -127,16 +127,30 @@ ava('sweeping cache', (test) => {
 	test.deepEqual([...sweptCache], [['first', 'foo'], ['second', 'bar']]);
 });
 
+ava('sweeping cache with bind', (test) => {
+	const sweptCache = new Cache(cache);
+
+	test.notThrows(() => new Cache(cache).sweep((val) => val === 'baz', sweptCache));
+});
+
 // filter
 
 ava('filtering the cache', (test) => {
 	test.deepEqual([...cache.filter((val) => val === 'foo')], [['first', 'foo']]);
 });
 
+ava('filtering the cache with bind', (test) => {
+	test.notThrows(() => cache.filter((val) => val === 'foo', cache));
+});
+
 // map
 
 ava('map the cache', (test) => {
 	test.deepEqual(cache.map((value) => value), ['foo', 'bar', 'baz']);
+});
+
+ava('map the cache with bind', (test) => {
+	test.notThrows(() => cache.map((value) => value, cache));
 });
 
 // some
@@ -149,6 +163,10 @@ ava('find if something in the cache does not fulfil some condition', (test) => {
 	test.false(cache.some(() => false));
 });
 
+ava('find if something in the cache fulfils some condition with bind', (test) => {
+	test.notThrows(() => cache.some(val => val === 'foo', cache));
+});
+
 // every
 
 ava('find if everything in the cache fulfils some condition', (test) => {
@@ -159,10 +177,18 @@ ava('find if everything in the cache does not fulfil some condition', (test) => 
 	test.false(cache.every(() => false));
 });
 
+ava('find if everything in the cache fulfils some condition with bind', (test) => {
+	test.notThrows(() => cache.every((val) => val.length > 2, cache));
+});
+
 // reduce
 
 ava('reduce the cache to one single value', (test) => {
 	test.is(cache.reduce((accumulator, value) => `${accumulator}${value}`, ''), 'foobarbaz');
+});
+
+ava('reduce the cache to one single value with bind', (test) => {
+	test.notThrows(() => cache.reduce((accumulator, value) => `${accumulator}${value}`, '', cache));
 });
 
 // concat
