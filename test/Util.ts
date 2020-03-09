@@ -62,7 +62,7 @@ ava('find an entry in a cache', (test) => {
 	test.deepEqual(cache.find((val, key) => val === 'bar' && key === 'second'), ['second', 'bar']);
 });
 
-ava('find bany entry that doesn\'t exist in a cache', (test) => {
+ava('find an entry that doesn\'t exist in a cache', (test) => {
 	test.is(cache.find(() => false), undefined);
 });
 
