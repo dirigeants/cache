@@ -203,7 +203,7 @@ ava('concat two cache instances', (test) => {
 ava('sort the cache', (test) => {
 	test.plan(2);
 
-	// sort is in place
+	// sort is in-place
 	const clone = new Cache(cache);
 	const sorted = [['second', 'bar'], ['third', 'baz'], ['first', 'foo']];
 
