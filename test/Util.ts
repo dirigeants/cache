@@ -4,121 +4,183 @@ import { Cache } from '../dist';
 const cache = new Cache([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
 const emptyCache: Cache<string, string> = new Cache();
 
-ava('get the first element of the cache', (test): void => {
-	test.true(cache.first[0] === 'first' && cache.first[1] === 'foo');
-	test.true(emptyCache.first === null);
+// firsts
+
+ava('get the first entry of a cache', (test): void => {
+	test.deepEqual(cache.first, ['first', 'foo']);
 });
 
-ava('get the first key of the cache', (test): void => {
-	test.true(cache.firstKey === 'first');
-	test.true(emptyCache.firstKey === null);
+ava('get the first entry of an empty cache', (test): void => {
+	test.is(emptyCache.first, null);
 });
 
-ava('get the first value of the cache', (test): void => {
-	test.true(cache.firstValue === 'foo');
-	test.true(emptyCache.firstValue === null);
+ava('get the first key of a cache', (test): void => {
+	test.is(cache.firstKey, 'first');
 });
 
-ava('get the last element of the cache', (test): void => {
-	test.true(cache.last[0] === 'third' && cache.last[1] === 'baz');
-	test.true(emptyCache.last === null);
+ava('get the first key of an empty cache', (test): void => {
+	test.is(emptyCache.firstKey, null);
 });
 
-ava('get the last key of the cache', (test): void => {
-	test.true(cache.lastKey === 'third');
-	test.true(emptyCache.lastKey === null);
+ava('get the first value of a cache', (test): void => {
+	test.is(cache.firstValue, 'foo');
 });
 
-ava('get the last value of the cache', (test): void => {
-	test.true(cache.lastValue === 'baz');
-	test.true(emptyCache.lastValue === null);
+ava('get the first value of an empty cache', (test): void => {
+	test.is(emptyCache.firstValue, null);
 });
 
-ava('find an element in the cache', (test) => {
-	const result = cache.find((val, key) => key === 'second' && val === 'bar');
-	const emptyResult = cache.find(() => false);
-	test.true(result[0] === 'second' && result[1] === 'bar');
-	test.true(emptyResult === undefined);
-	test.notThrows(() => cache.find((val, key) => key === 'second' && val === 'bar', cache));
+// lasts
+
+ava('get the last entry of a cache', (test): void => {
+	test.deepEqual(cache.last, ['third', 'baz']);
 });
 
-ava('find an key in the cache', (test) => {
-	const result = cache.findKey(val => val === 'bar');
-	const emptyResult = cache.findKey(() => false);
-	test.true(result === 'second');
-	test.true(emptyResult === undefined);
-	test.notThrows(() => cache.findKey(val => val === 'bar', cache));
+ava('get the last entry of an empty cache', (test): void => {
+	test.is(emptyCache.last, null);
 });
 
-ava('find a value in the cache', (test) => {
-	const result = cache.findValue((_val, key) => key === 'second');
-	const emptyResult = cache.findValue(() => false);
-	test.true(result === 'bar');
-	test.true(emptyResult === undefined);
+ava('get the last key of a cache', (test): void => {
+	test.is(cache.lastKey, 'third');
+});
+
+ava('get the last key of an empty cache', (test): void => {
+	test.is(emptyCache.lastKey, null);
+});
+
+ava('get the last value of a cache', (test): void => {
+	test.is(cache.lastValue, 'baz');
+});
+
+ava('get the last value of an empty cache', (test): void => {
+	test.is(emptyCache.lastValue, null);
+});
+
+// Finds
+
+ava('find an entry in a cache', (test) => {
+	test.deepEqual(cache.find((val, key) => val === 'bar' && key === 'second'), ['second', 'bar']);
+});
+
+ava('find bany entry that doesn\'t exist in a cache', (test) => {
+	test.is(cache.find(() => false), undefined);
+});
+
+ava('find an entry while binding a context', (test) => {
+	test.notThrows(() => cache.find((_val, key) => key === 'second', cache));
+});
+
+ava('find a key in a cache', (test) => {
+	test.deepEqual(cache.findKey((val, key) => val === 'bar' && key === 'second'), 'second');
+});
+
+ava('find a key that doesn\'t exist in a cache', (test) => {
+	test.is(cache.findKey(() => false), undefined);
+});
+
+ava('find a key while binding a context', (test) => {
+	test.notThrows(() => cache.findKey((_val, key) => key === 'second', cache));
+});
+
+ava('find a value in a cache', (test) => {
+	test.deepEqual(cache.findValue((val, key) => val === 'bar' && key === 'second'), 'bar');
+});
+
+ava('find a value that doesn\'t exist in a cache', (test) => {
+	test.is(cache.findValue(() => false), undefined);
+});
+
+ava('find a value while binding a context', (test) => {
 	test.notThrows(() => cache.findValue((_val, key) => key === 'second', cache));
 });
 
-ava('seeing if 2 caches are equal', (test) => {
+// equals
+
+ava('2 caches are equal', (test) => {
 	const cache2 = new Cache([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
-	test.true(cache.equals(cache2));
-	test.false(cache.equals(emptyCache));
+
+	test.true(cache2.equals(cache));
 });
+
+ava('2 caches are not equal', (test) => {
+	const cache2 = new Cache([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
+
+	test.false(cache2.equals(emptyCache));
+});
+
+// clone
 
 ava('cloning caches', (test) => {
-	const cache2 = cache.clone();
-	test.true(cache.equals(cache2));
+	test.deepEqual([...cache.clone()], [...cache]);
 });
+
+// sweep
 
 ava('sweeping cache', (test) => {
-	const trueSwoopedCache = new Cache([['first', 'foo'], ['second', 'bar']]);
-	const swoopedCache = cache.clone();
-	const swooped = swoopedCache.sweep((val) => val === 'baz');
+	test.plan(2);
 
-	// Test if the size returned is indeed 1
-	test.true(swooped === 1);
-	test.true(swoopedCache.equals(trueSwoopedCache));
-	test.notThrows(() => swoopedCache.sweep((val) => val === 'baz', cache));
+	const sweptCache = new Cache(cache);
+	const swept = sweptCache.sweep((val) => val === 'baz');
+
+	// Test if the number returned is indeed 1
+	test.is(swept, 1);
+	test.deepEqual([...sweptCache], [['first', 'foo'], ['second', 'bar']]);
 });
+
+// filter
 
 ava('filtering the cache', (test) => {
-	const filteredCache2 = new Cache([['first', 'foo']]);
-	const filteredCache = cache.filter((val) => val === 'foo');
-	test.true(filteredCache.equals(filteredCache2));
-	test.notThrows(() => cache.filter((val) => val === 'foo', cache));
+	test.deepEqual([...cache.filter((val) => val === 'foo')], [['first', 'foo']]);
 });
 
+// map
+
 ava('map the cache', (test) => {
-	const map = cache.map((value) => value);
-	test.true(map[0] === 'foo' && map[1] === 'bar' && map[2] === 'baz');
-	test.notThrows(() => cache.map((value) => value, cache));
+	test.deepEqual(cache.map((value) => value), ['foo', 'bar', 'baz']);
 });
+
+// some
 
 ava('find if something in the cache fulfils some condition', (test) => {
 	test.true(cache.some(val => val === 'foo'));
-	test.false(cache.some(() => false));
-	test.notThrows(() => cache.some(val => val === 'foo', cache));
 });
+
+ava('find if something in the cache does not fulfil some condition', (test) => {
+	test.false(cache.some(() => false));
+});
+
+// every
 
 ava('find if everything in the cache fulfils some condition', (test) => {
 	test.true(cache.every((val) => val.length > 2));
-	test.false(cache.every(() => false));
-	test.notThrows(() => cache.every(() => true, cache));
 });
+
+ava('find if everything in the cache does not fulfil some condition', (test) => {
+	test.false(cache.every(() => false));
+});
+
+// reduce
 
 ava('reduce the cache to one single value', (test) => {
-	test.true(cache.reduce((accumulator, value) => `${accumulator}${value}`, '') === 'foobarbaz');
-	test.notThrows(() => cache.reduce((accumulator, value) => `${accumulator}${value}`, null, cache));
+	test.is(cache.reduce((accumulator, value) => `${accumulator}${value}`, ''), 'foobarbaz');
 });
+
+// concat
 
 ava('concat two cache instances', (test) => {
-	const actualResult = new Cache([['first', 'foo'], ['second', 'bar'], ['third', 'baz'], ['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
-	const result = cache.concat(cache.clone());
-	test.true(actualResult.equals(result));
+	const concat = cache.concat(new Cache([['forth', 'biz'], ['fifth', 'buzz']]));
+	test.deepEqual([...concat], [['first', 'foo'], ['second', 'bar'], ['third', 'baz'], ['forth', 'biz'], ['fifth', 'buzz']]);
 });
 
+// sort
+
 ava('sort the cache', (test) => {
-	const sortInited = [['first', 'foo'], ['second', 'bar'], ['third', 'baz'], ['first', 'foo'], ['second', 'bar'], ['third', 'baz']].sort();
-	const actualResult = new Cache(sortInited as Iterable<readonly[string, string]>);
-	const result = cache.sort();
-	test.true(actualResult.equals(result));
+	test.plan(2);
+
+	// sort is in place
+	const clone = new Cache(cache);
+	const sorted = [['second', 'bar'], ['third', 'baz'], ['first', 'foo']];
+
+	test.deepEqual([...clone.sort()], sorted);
+	test.deepEqual([...clone], sorted);
 });
