@@ -48,7 +48,7 @@
 					],
 					"children": [
 						{
-							"id": 153,
+							"id": 162,
 							"name": "[Symbol.toStringTag]",
 							"kind": 1024,
 							"kindString": "Property",
@@ -68,12 +68,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 153,
+								"id": 162,
 								"name": "Map.[Symbol.toStringTag]"
 							}
 						},
 						{
-							"id": 143,
+							"id": 152,
 							"name": "size",
 							"kind": 1024,
 							"kindString": "Property",
@@ -93,12 +93,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 143,
+								"id": 152,
 								"name": "Map.size"
 							}
 						},
 						{
-							"id": 144,
+							"id": 153,
 							"name": "Map",
 							"kind": 1024,
 							"kindString": "Property",
@@ -426,7 +426,7 @@
 							]
 						},
 						{
-							"id": 145,
+							"id": 154,
 							"name": "[Symbol.iterator]",
 							"kind": 2048,
 							"kindString": "Method",
@@ -435,7 +435,7 @@
 							},
 							"signatures": [
 								{
-									"id": 146,
+									"id": 155,
 									"name": "[Symbol.iterator]",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -466,7 +466,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 145,
+										"id": 154,
 										"name": "Map.[Symbol.iterator]"
 									}
 								}
@@ -480,12 +480,12 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 145,
+								"id": 154,
 								"name": "Map.[Symbol.iterator]"
 							}
 						},
 						{
-							"id": 119,
+							"id": 128,
 							"name": "clear",
 							"kind": 2048,
 							"kindString": "Method",
@@ -494,7 +494,7 @@
 							},
 							"signatures": [
 								{
-									"id": 120,
+									"id": 129,
 									"name": "clear",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -507,7 +507,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 119,
+										"id": 128,
 										"name": "Map.clear"
 									}
 								}
@@ -521,7 +521,7 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 119,
+								"id": 128,
 								"name": "Map.clear"
 							}
 						},
@@ -651,7 +651,7 @@
 							]
 						},
 						{
-							"id": 121,
+							"id": 130,
 							"name": "delete",
 							"kind": 2048,
 							"kindString": "Method",
@@ -660,7 +660,7 @@
 							},
 							"signatures": [
 								{
-									"id": 122,
+									"id": 131,
 									"name": "delete",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -669,7 +669,7 @@
 									},
 									"parameters": [
 										{
-											"id": 123,
+											"id": 132,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -688,7 +688,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 121,
+										"id": 130,
 										"name": "Map.delete"
 									}
 								}
@@ -702,12 +702,12 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 121,
+								"id": 130,
 								"name": "Map.delete"
 							}
 						},
 						{
-							"id": 147,
+							"id": 156,
 							"name": "entries",
 							"kind": 2048,
 							"kindString": "Method",
@@ -716,7 +716,7 @@
 							},
 							"signatures": [
 								{
-									"id": 148,
+									"id": 157,
 									"name": "entries",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -747,7 +747,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 147,
+										"id": 156,
 										"name": "Map.entries"
 									}
 								}
@@ -761,7 +761,7 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 147,
+								"id": 156,
 								"name": "Map.entries"
 							}
 						},
@@ -1582,7 +1582,7 @@
 							]
 						},
 						{
-							"id": 124,
+							"id": 133,
 							"name": "forEach",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1591,7 +1591,7 @@
 							},
 							"signatures": [
 								{
-									"id": 125,
+									"id": 134,
 									"name": "forEach",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1600,7 +1600,7 @@
 									},
 									"parameters": [
 										{
-											"id": 126,
+											"id": 135,
 											"name": "callbackfn",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1610,7 +1610,7 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 127,
+													"id": 136,
 													"name": "__type",
 													"kind": 65536,
 													"kindString": "Type literal",
@@ -1619,7 +1619,7 @@
 													},
 													"signatures": [
 														{
-															"id": 128,
+															"id": 137,
 															"name": "__call",
 															"kind": 4096,
 															"kindString": "Call signature",
@@ -1628,7 +1628,7 @@
 															},
 															"parameters": [
 																{
-																	"id": 129,
+																	"id": 138,
 																	"name": "value",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -1641,7 +1641,7 @@
 																	}
 																},
 																{
-																	"id": 130,
+																	"id": 139,
 																	"name": "key",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -1654,7 +1654,7 @@
 																	}
 																},
 																{
-																	"id": 131,
+																	"id": 140,
 																	"name": "map",
 																	"kind": 32768,
 																	"kindString": "Parameter",
@@ -1663,7 +1663,7 @@
 																	},
 																	"type": {
 																		"type": "reference",
-																		"id": 144,
+																		"id": 153,
 																		"typeArguments": [
 																			{
 																				"type": "typeParameter",
@@ -1695,7 +1695,7 @@
 											}
 										},
 										{
-											"id": 132,
+											"id": 141,
 											"name": "thisArg",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1715,7 +1715,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 124,
+										"id": 133,
 										"name": "Map.forEach"
 									}
 								}
@@ -1729,12 +1729,12 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 124,
+								"id": 133,
 								"name": "Map.forEach"
 							}
 						},
 						{
-							"id": 133,
+							"id": 142,
 							"name": "get",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1743,7 +1743,7 @@
 							},
 							"signatures": [
 								{
-									"id": 134,
+									"id": 143,
 									"name": "get",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1752,7 +1752,7 @@
 									},
 									"parameters": [
 										{
-											"id": 135,
+											"id": 144,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1780,7 +1780,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 133,
+										"id": 142,
 										"name": "Map.get"
 									}
 								}
@@ -1794,12 +1794,12 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 133,
+								"id": 142,
 								"name": "Map.get"
 							}
 						},
 						{
-							"id": 136,
+							"id": 145,
 							"name": "has",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1808,7 +1808,7 @@
 							},
 							"signatures": [
 								{
-									"id": 137,
+									"id": 146,
 									"name": "has",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1817,7 +1817,7 @@
 									},
 									"parameters": [
 										{
-											"id": 138,
+											"id": 147,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1836,7 +1836,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 136,
+										"id": 145,
 										"name": "Map.has"
 									}
 								}
@@ -1850,12 +1850,12 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 136,
+								"id": 145,
 								"name": "Map.has"
 							}
 						},
 						{
-							"id": 149,
+							"id": 158,
 							"name": "keys",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1864,7 +1864,7 @@
 							},
 							"signatures": [
 								{
-									"id": 150,
+									"id": 159,
 									"name": "keys",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1886,7 +1886,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 149,
+										"id": 158,
 										"name": "Map.keys"
 									}
 								}
@@ -1900,7 +1900,7 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 149,
+								"id": 158,
 								"name": "Map.keys"
 							}
 						},
@@ -2241,7 +2241,7 @@
 							]
 						},
 						{
-							"id": 139,
+							"id": 148,
 							"name": "set",
 							"kind": 2048,
 							"kindString": "Method",
@@ -2250,7 +2250,7 @@
 							},
 							"signatures": [
 								{
-									"id": 140,
+									"id": 149,
 									"name": "set",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -2259,7 +2259,7 @@
 									},
 									"parameters": [
 										{
-											"id": 141,
+											"id": 150,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -2272,7 +2272,7 @@
 											}
 										},
 										{
-											"id": 142,
+											"id": 151,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -2291,7 +2291,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 139,
+										"id": 148,
 										"name": "Map.set"
 									}
 								}
@@ -2305,7 +2305,7 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 139,
+								"id": 148,
 								"name": "Map.set"
 							}
 						},
@@ -2469,7 +2469,7 @@
 										"isExported": true
 									},
 									"comment": {
-										"shortText": "Sorts entries in this Cache"
+										"shortText": "Sorts entries in-place in this Cache"
 									},
 									"parameters": [
 										{
@@ -2587,6 +2587,157 @@
 									"fileName": "src/index.ts",
 									"line": 191,
 									"character": 12
+								}
+							]
+						},
+						{
+							"id": 119,
+							"name": "sorted",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 120,
+									"name": "sorted",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Sorts entries in a new Cache"
+									},
+									"parameters": [
+										{
+											"id": 121,
+											"name": "compareFunction",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function to determine how the resulting Cache should be sorted\n"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 122,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 123,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 124,
+																	"name": "v0",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 125,
+																	"name": "v1",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 126,
+																	"name": "k0",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 127,
+																	"name": "k1",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/index.ts",
+															"line": 203,
+															"character": 31
+														}
+													]
+												}
+											},
+											"defaultValue": "(first, second): number => +(first > second) || +(first === second) - 1"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "Cache"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 203,
+									"character": 14
 								}
 							]
 						},
@@ -2732,7 +2883,7 @@
 							]
 						},
 						{
-							"id": 151,
+							"id": 160,
 							"name": "values",
 							"kind": 2048,
 							"kindString": "Method",
@@ -2741,7 +2892,7 @@
 							},
 							"signatures": [
 								{
-									"id": 152,
+									"id": 161,
 									"name": "values",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -2763,7 +2914,7 @@
 									},
 									"inheritedFrom": {
 										"type": "reference",
-										"id": 151,
+										"id": 160,
 										"name": "Map.values"
 									}
 								}
@@ -2777,7 +2928,7 @@
 							],
 							"inheritedFrom": {
 								"type": "reference",
-								"id": 151,
+								"id": 160,
 								"name": "Map.values"
 							}
 						}
@@ -2787,9 +2938,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								153,
-								143,
-								144
+								162,
+								152,
+								153
 							]
 						},
 						{
@@ -2808,29 +2959,30 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								145,
-								119,
+								154,
+								128,
 								102,
 								104,
-								121,
-								147,
+								130,
+								156,
 								107,
 								81,
 								53,
 								17,
 								26,
 								35,
-								124,
 								133,
-								136,
-								149,
+								142,
+								145,
+								158,
 								62,
 								90,
-								139,
+								148,
 								72,
 								110,
+								119,
 								44,
-								151
+								160
 							]
 						}
 					],
@@ -2844,7 +2996,7 @@
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"id": 144,
+							"id": 153,
 							"typeArguments": [
 								{
 									"type": "typeParameter",
