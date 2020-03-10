@@ -185,7 +185,7 @@ export class Cache<K, V> extends Map<K, V> {
 	}
 
 	/**
-	 * Sorts entries in this Cache
+	 * Sorts entries in-place in this Cache
 	 * @param compareFunction Function to determine how this Cache should be sorted
 	 */
 	public sort(compareFunction: (v0: V, v1: V, k0?: K, k1?: K) => number = (first, second): number => +(first > second) || +(first === second) - 1): this {
@@ -194,6 +194,16 @@ export class Cache<K, V> extends Map<K, V> {
 		this.clear();
 		for (const [key, value] of entries) this.set(key, value);
 		return this;
+	}
+
+	/**
+	 * Sorts entries in a new Cache
+	 * @param compareFunction Function to determine how the resulting Cache should be sorted
+	 */
+	public sorted(compareFunction: (v0: V, v1: V, k0?: K, k1?: K) => number = (first, second): number => +(first > second) || +(first === second) - 1): Cache<K, V> {
+		const entries = [...this.entries()]
+			.sort((e0, e1) => compareFunction(e0[1], e1[1], e0[0], e1[0]));
+		return new (this.constructor as typeof Cache)(entries);
 	}
 
 }

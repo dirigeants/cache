@@ -210,3 +210,16 @@ ava('sort the cache', (test) => {
 	test.deepEqual([...clone.sort()], sorted);
 	test.deepEqual([...clone], sorted);
 });
+
+// sorted
+
+ava('sort the cache into a new one', (test) => {
+	test.plan(2);
+
+	// sort is not in-place
+	const clone = new Cache(cache);
+	const sorted = [['second', 'bar'], ['third', 'baz'], ['first', 'foo']];
+
+	test.deepEqual([...clone.sorted()], sorted);
+	test.notDeepEqual([...clone], sorted);
+});
