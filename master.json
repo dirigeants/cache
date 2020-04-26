@@ -53,7 +53,8 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
-								"isExported": true
+								"isExported": true,
+								"isReadonly": true
 							},
 							"sources": [
 								{
@@ -78,7 +79,8 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
-								"isExported": true
+								"isExported": true,
+								"isReadonly": true
 							},
 							"sources": [
 								{
