@@ -7,13 +7,13 @@
 	"children": [
 		{
 			"id": 1,
-			"name": "\"index\"",
+			"name": "\"Cache\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "/home/runner/work/cache/cache/src/index.ts",
+			"originalName": "/home/runner/work/cache/cache/src/Cache.ts",
 			"children": [
 				{
 					"id": 2,
@@ -34,6 +34,9 @@
 							"kindString": "Type parameter",
 							"flags": {
 								"isExported": true
+							},
+							"comment": {
+								"shortText": "The type of the {@link Map} keys."
 							}
 						},
 						{
@@ -43,6 +46,9 @@
 							"kindString": "Type parameter",
 							"flags": {
 								"isExported": true
+							},
+							"comment": {
+								"shortText": "The type of the {@link Map} values.\n"
 							}
 						}
 					],
@@ -125,6 +131,13 @@
 									"id": 2,
 									"name": "Cache"
 								}
+							],
+							"implementedBy": [
+								{
+									"type": "reference",
+									"id": 164,
+									"name": "ProxyCache"
+								}
 							]
 						},
 						{
@@ -177,8 +190,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 9,
+									"fileName": "src/Cache.ts",
+									"line": 11,
 									"character": 17
 								}
 							]
@@ -224,8 +237,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 23,
+									"fileName": "src/Cache.ts",
+									"line": 25,
 									"character": 20
 								}
 							]
@@ -271,8 +284,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 16,
+									"fileName": "src/Cache.ts",
+									"line": 18,
 									"character": 22
 								}
 							]
@@ -327,8 +340,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 30,
+									"fileName": "src/Cache.ts",
+									"line": 32,
 									"character": 16
 								}
 							]
@@ -374,8 +387,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 44,
+									"fileName": "src/Cache.ts",
+									"line": 46,
 									"character": 19
 								}
 							]
@@ -421,8 +434,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 37,
+									"fileName": "src/Cache.ts",
+									"line": 39,
 									"character": 21
 								}
 							]
@@ -567,8 +580,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 165,
+									"fileName": "src/Cache.ts",
+									"line": 167,
 									"character": 13
 								}
 							]
@@ -646,8 +659,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 173,
+									"fileName": "src/Cache.ts",
+									"line": 175,
 									"character": 14
 								}
 							]
@@ -825,8 +838,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 183,
+									"fileName": "src/Cache.ts",
+									"line": 185,
 									"character": 14
 								}
 							]
@@ -932,8 +945,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 141,
+															"fileName": "src/Cache.ts",
+															"line": 143,
 															"character": 17
 														}
 													]
@@ -966,8 +979,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 141,
+									"fileName": "src/Cache.ts",
+									"line": 143,
 									"character": 13
 								}
 							]
@@ -1073,8 +1086,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 102,
+															"fileName": "src/Cache.ts",
+															"line": 104,
 															"character": 18
 														}
 													]
@@ -1118,8 +1131,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 102,
+									"fileName": "src/Cache.ts",
+									"line": 104,
 									"character": 14
 								}
 							]
@@ -1225,8 +1238,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 53,
+															"fileName": "src/Cache.ts",
+															"line": 55,
 															"character": 16
 														}
 													]
@@ -1277,8 +1290,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 53,
+									"fileName": "src/Cache.ts",
+									"line": 55,
 									"character": 12
 								}
 							]
@@ -1384,8 +1397,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 65,
+															"fileName": "src/Cache.ts",
+															"line": 67,
 															"character": 19
 														}
 													]
@@ -1427,8 +1440,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 65,
+									"fileName": "src/Cache.ts",
+									"line": 67,
 									"character": 15
 								}
 							]
@@ -1534,8 +1547,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 77,
+															"fileName": "src/Cache.ts",
+															"line": 79,
 															"character": 21
 														}
 													]
@@ -1577,8 +1590,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 77,
+									"fileName": "src/Cache.ts",
+									"line": 79,
 									"character": 17
 								}
 							]
@@ -2018,8 +2031,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 115,
+															"fileName": "src/Cache.ts",
+															"line": 117,
 															"character": 24
 														}
 													]
@@ -2055,8 +2068,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 115,
+									"fileName": "src/Cache.ts",
+									"line": 117,
 									"character": 11
 								}
 							]
@@ -2186,8 +2199,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 154,
+															"fileName": "src/Cache.ts",
+															"line": 156,
 															"character": 21
 														}
 													]
@@ -2236,8 +2249,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 154,
+									"fileName": "src/Cache.ts",
+									"line": 156,
 									"character": 14
 								}
 							]
@@ -2412,8 +2425,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 129,
+															"fileName": "src/Cache.ts",
+															"line": 131,
 															"character": 16
 														}
 													]
@@ -2446,8 +2459,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 129,
+									"fileName": "src/Cache.ts",
+									"line": 131,
 									"character": 12
 								}
 							]
@@ -2568,8 +2581,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 191,
+															"fileName": "src/Cache.ts",
+															"line": 193,
 															"character": 29
 														}
 													]
@@ -2586,8 +2599,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 191,
+									"fileName": "src/Cache.ts",
+									"line": 193,
 									"character": 12
 								}
 							]
@@ -2708,8 +2721,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 203,
+															"fileName": "src/Cache.ts",
+															"line": 205,
 															"character": 31
 														}
 													]
@@ -2737,8 +2750,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 203,
+									"fileName": "src/Cache.ts",
+									"line": 205,
 									"character": 14
 								}
 							]
@@ -2844,8 +2857,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "src/index.ts",
-															"line": 89,
+															"fileName": "src/Cache.ts",
+															"line": 91,
 															"character": 17
 														}
 													]
@@ -2878,8 +2891,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
-									"line": 89,
+									"fileName": "src/Cache.ts",
+									"line": 91,
 									"character": 13
 								}
 							]
@@ -2990,12 +3003,3459 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/index.ts",
-							"line": 4,
+							"fileName": "src/Cache.ts",
+							"line": 6,
 							"character": 18
 						}
 					],
 					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 153,
+							"typeArguments": [
+								{
+									"type": "typeParameter",
+									"name": "K"
+								},
+								{
+									"type": "typeParameter",
+									"name": "V"
+								}
+							],
+							"name": "Map"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 164,
+							"name": "ProxyCache"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/Cache.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 163,
+			"name": "\"ProxyCache\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/cache/cache/src/ProxyCache.ts",
+			"children": [
+				{
+					"id": 164,
+					"name": "ProxyCache",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "The proxy cache structure Project-Blue uses"
+					},
+					"typeParameter": [
+						{
+							"id": 165,
+							"name": "K",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The type of the {@link Map} keys."
+							}
+						},
+						{
+							"id": 166,
+							"name": "V",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The type of the {@link Map} values.\n"
+							}
+						},
+						{
+							"id": 210,
+							"name": "K",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							}
+						},
+						{
+							"id": 211,
+							"name": "V",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 169,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 170,
+									"name": "new ProxyCache",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 171,
+											"name": "store",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 153,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												],
+												"name": "Map"
+											}
+										},
+										{
+											"id": 172,
+											"name": "keys",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "typeParameter",
+													"name": "K"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 164,
+										"name": "ProxyCache"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 11,
+									"character": 19
+								}
+							]
+						},
+						{
+							"id": 167,
+							"name": "#keys",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 10,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "typeParameter",
+									"name": "K"
+								}
+							}
+						},
+						{
+							"id": 168,
+							"name": "#store",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 11,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 153,
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "K"
+									},
+									{
+										"type": "typeParameter",
+										"name": "V"
+									}
+								],
+								"name": "Map"
+							}
+						},
+						{
+							"id": 175,
+							"name": "[Symbol.toStringTag]",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns the string tag of this proxy object."
+							},
+							"getSignature": [
+								{
+									"id": 176,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns the string tag of this proxy object."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 33,
+									"character": 32
+								}
+							]
+						},
+						{
+							"id": 214,
+							"name": "first",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The first item in this Cache"
+							},
+							"getSignature": [
+								{
+									"id": 215,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The first item in this Cache"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												]
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 5,
+										"name": "Cache.first"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 11,
+									"character": 17
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 5,
+								"name": "Cache.first"
+							}
+						},
+						{
+							"id": 218,
+							"name": "firstKey",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The first key of this cache"
+							},
+							"getSignature": [
+								{
+									"id": 219,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The first key of this cache"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 9,
+										"name": "Cache.firstKey"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 25,
+									"character": 20
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 9,
+								"name": "Cache.firstKey"
+							}
+						},
+						{
+							"id": 216,
+							"name": "firstValue",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The first value of this cache"
+							},
+							"getSignature": [
+								{
+									"id": 217,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The first value of this cache"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "V"
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 7,
+										"name": "Cache.firstValue"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 18,
+									"character": 22
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 7,
+								"name": "Cache.firstValue"
+							}
+						},
+						{
+							"id": 220,
+							"name": "last",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The last item in this cache"
+							},
+							"getSignature": [
+								{
+									"id": 221,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The last item in this cache"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												]
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 11,
+										"name": "Cache.last"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 32,
+									"character": 16
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 11,
+								"name": "Cache.last"
+							}
+						},
+						{
+							"id": 224,
+							"name": "lastKey",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The last key of this cache"
+							},
+							"getSignature": [
+								{
+									"id": 225,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The last key of this cache"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 15,
+										"name": "Cache.lastKey"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 46,
+									"character": 19
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 15,
+								"name": "Cache.lastKey"
+							}
+						},
+						{
+							"id": 222,
+							"name": "lastValue",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The last value of this cache"
+							},
+							"getSignature": [
+								{
+									"id": 223,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The last value of this cache"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "V"
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 13,
+										"name": "Cache.lastValue"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 39,
+									"character": 21
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 13,
+								"name": "Cache.lastValue"
+							}
+						},
+						{
+							"id": 173,
+							"name": "size",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns the number of keys in the proxy."
+							},
+							"getSignature": [
+								{
+									"id": 174,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns the number of keys in the proxy."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 152,
+										"name": "Map.size"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 26,
+									"character": 16
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 152,
+								"name": "Map.size"
+							}
+						},
+						{
+							"id": 208,
+							"name": "[Symbol.species]",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"getSignature": [
+								{
+									"id": 209,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "query",
+										"queryType": {
+											"type": "reference",
+											"id": 164,
+											"name": "ProxyCache"
+										}
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 137,
+									"character": 35
+								}
+							]
+						},
+						{
+							"id": 200,
+							"name": "[Symbol.iterator]",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 201,
+									"name": "[Symbol.iterator]",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a new Iterator object that contains the [key, value] pairs for each element in the {@link Map} object\ncontained in the proxy in insertion order."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												]
+											}
+										],
+										"name": "IterableIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 103,
+									"character": 26
+								}
+							]
+						},
+						{
+							"id": 189,
+							"name": "clear",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 190,
+									"name": "clear",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Removes all keys from the proxy."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 128,
+										"name": "Map.clear"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 82,
+									"character": 13
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 128,
+								"name": "Map.clear"
+							}
+						},
+						{
+							"id": 212,
+							"name": "clone",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 213,
+									"name": "clone",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 164,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "ProxyCache"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 102,
+										"name": "Cache.clone"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 144,
+									"character": 6
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 102,
+								"name": "Cache.clone"
+							}
+						},
+						{
+							"id": 311,
+							"name": "concat",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 312,
+									"name": "concat",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a new Cache with this and other caches together"
+									},
+									"parameters": [
+										{
+											"id": 313,
+											"name": "caches",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isRest": true
+											},
+											"comment": {
+												"text": "Other caches to include in the new cache\n"
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"id": 2,
+													"typeArguments": [
+														{
+															"type": "typeParameter",
+															"name": "K"
+														},
+														{
+															"type": "typeParameter",
+															"name": "V"
+														}
+													],
+													"name": "Cache"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "Cache"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 104,
+										"name": "Cache.concat"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 175,
+									"character": 14
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 104,
+								"name": "Cache.concat"
+							}
+						},
+						{
+							"id": 186,
+							"name": "delete",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 187,
+									"name": "delete",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Removes a key from the proxy.",
+										"returns": "Whether or not the key was removed.\n"
+									},
+									"parameters": [
+										{
+											"id": 188,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The key of the element to remove from the proxy object."
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "K"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 130,
+										"name": "Map.delete"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 72,
+									"character": 14
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 130,
+								"name": "Map.delete"
+							}
+						},
+						{
+							"id": 202,
+							"name": "entries",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 203,
+									"name": "entries",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a new Iterator object that contains the [key, value] pairs for each element in the {@link Map} object\ncontained in the proxy in insertion order."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												]
+											}
+										],
+										"name": "IterableIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 111,
+									"character": 16
+								}
+							]
+						},
+						{
+							"id": 314,
+							"name": "equals",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 315,
+									"name": "equals",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Naive equality compare function"
+									},
+									"parameters": [
+										{
+											"id": 316,
+											"name": "cache",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The cache to compare this against\n"
+											},
+											"type": {
+												"type": "reference",
+												"id": 2,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												],
+												"name": "Cache"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 107,
+										"name": "Cache.equals"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 185,
+									"character": 14
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 107,
+								"name": "Cache.equals"
+							}
+						},
+						{
+							"id": 290,
+							"name": "every",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 291,
+									"name": "every",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Tests if every entry in this cache meets a condition"
+									},
+									"parameters": [
+										{
+											"id": 292,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The function to test the condition"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 293,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 294,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 295,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 296,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 297,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 143,
+															"character": 17
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 298,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 81,
+										"name": "Cache.every"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 143,
+									"character": 13
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 81,
+								"name": "Cache.every"
+							}
+						},
+						{
+							"id": 262,
+							"name": "filter",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 263,
+									"name": "filter",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a new filtered Cache based on the filter function"
+									},
+									"parameters": [
+										{
+											"id": 264,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function used to determine what entries are in the new Cache"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 265,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 266,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 267,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 268,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 269,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 104,
+															"character": 18
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 270,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "Cache"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 53,
+										"name": "Cache.filter"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 104,
+									"character": 14
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 53,
+								"name": "Cache.filter"
+							}
+						},
+						{
+							"id": 226,
+							"name": "find",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 227,
+									"name": "find",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Finds an entry from this Cache"
+									},
+									"parameters": [
+										{
+											"id": 228,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function used to find what you are looking for"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 229,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 230,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 231,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 232,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 233,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 55,
+															"character": 16
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 234,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "typeParameter",
+														"name": "K"
+													},
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												]
+											},
+											{
+												"type": "intrinsic",
+												"name": "void"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 17,
+										"name": "Cache.find"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 55,
+									"character": 12
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 17,
+								"name": "Cache.find"
+							}
+						},
+						{
+							"id": 235,
+							"name": "findKey",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 236,
+									"name": "findKey",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Finds a key from this Cache"
+									},
+									"parameters": [
+										{
+											"id": 237,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function used to find what you are looking for"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 238,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 239,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 240,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 241,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 242,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 67,
+															"character": 19
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 243,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "intrinsic",
+												"name": "void"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 26,
+										"name": "Cache.findKey"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 67,
+									"character": 15
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 26,
+								"name": "Cache.findKey"
+							}
+						},
+						{
+							"id": 244,
+							"name": "findValue",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 245,
+									"name": "findValue",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Finds a value from this Cache"
+									},
+									"parameters": [
+										{
+											"id": 246,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function used to find what you are looking for"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 247,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 248,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 249,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 250,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 251,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 79,
+															"character": 21
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 252,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "V"
+											},
+											{
+												"type": "intrinsic",
+												"name": "void"
+											}
+										]
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 35,
+										"name": "Cache.findValue"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 79,
+									"character": 17
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 35,
+								"name": "Cache.findValue"
+							}
+						},
+						{
+							"id": 191,
+							"name": "forEach",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 192,
+									"name": "forEach",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Executes a provided function once per each key/value pair in the {@link Map} object, in insertion order"
+									},
+									"parameters": [
+										{
+											"id": 193,
+											"name": "callbackfn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function to execute for each element."
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 194,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 195,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 196,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 197,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 198,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"id": 153,
+																		"typeArguments": [
+																			{
+																				"type": "typeParameter",
+																				"name": "K"
+																			},
+																			{
+																				"type": "typeParameter",
+																				"name": "V"
+																			}
+																		],
+																		"name": "Map"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/ProxyCache.ts",
+															"line": 92,
+															"character": 27
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 199,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Value to use as this when executing callback.\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 133,
+										"name": "Map.forEach"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 92,
+									"character": 15
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 133,
+								"name": "Map.forEach"
+							}
+						},
+						{
+							"id": 177,
+							"name": "get",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 178,
+									"name": "get",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a specified element from a Map object. If the value that is associated to the provided key is an object,\nthen you will get a reference to that object and any change made to that object will effectively modify it inside\nthe Map object",
+										"returns": "The element associated with the specified key, or `undefined` if the key can't be found in the {@link Map} object.\n"
+									},
+									"parameters": [
+										{
+											"id": 179,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The key of the element to return from the {@link Map} object."
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "K"
+											}
+										}
+									],
+									"type": {
+										"type": "typeParameter",
+										"name": "V"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 142,
+										"name": "Map.get"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 44,
+									"character": 11
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 142,
+								"name": "Map.get"
+							}
+						},
+						{
+							"id": 180,
+							"name": "has",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 181,
+									"name": "has",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a boolean indicating whether an element with the specified key exists or not.",
+										"returns": "Whether or not an element with the specified key exists in the proxy and in the {@link Map} object.\n"
+									},
+									"parameters": [
+										{
+											"id": 182,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The key of the element to test for presence in the proxy and in the {@link Map} object."
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "K"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 145,
+										"name": "Map.has"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 53,
+									"character": 11
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 145,
+								"name": "Map.has"
+							}
+						},
+						{
+							"id": 204,
+							"name": "keys",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 205,
+									"name": "keys",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a new Iterator object that contains the keys for each element in the {@link Map} object contained in the\nproxy in insertion order"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											}
+										],
+										"name": "IterableIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 121,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 271,
+							"name": "map",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 272,
+									"name": "map",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Maps this Cache to an array (like Array#map())"
+									},
+									"typeParameter": [
+										{
+											"id": 273,
+											"name": "T",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {
+												"isExported": true
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 274,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function to determine what is mapped to the new Array"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 275,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 276,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 277,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 278,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 279,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "typeParameter",
+																"name": "T"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 117,
+															"character": 24
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 280,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "typeParameter",
+											"name": "T"
+										}
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 62,
+										"name": "Cache.map"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 117,
+									"character": 11
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 62,
+								"name": "Cache.map"
+							}
+						},
+						{
+							"id": 299,
+							"name": "reduce",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 300,
+									"name": "reduce",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Reduces this cache into a singularity"
+									},
+									"typeParameter": [
+										{
+											"id": 301,
+											"name": "I",
+											"kind": 131072,
+											"kindString": "Type parameter",
+											"flags": {
+												"isExported": true
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 302,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The function to determine how this Cache is reduced"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 303,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 304,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 305,
+																	"name": "accumulator",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "I"
+																	}
+																},
+																{
+																	"id": 306,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 307,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 308,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "typeParameter",
+																"name": "I"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 156,
+															"character": 21
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 309,
+											"name": "initialValue",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The initial value"
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "I"
+											}
+										},
+										{
+											"id": 310,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "typeParameter",
+										"name": "I"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 90,
+										"name": "Cache.reduce"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 156,
+									"character": 14
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 90,
+								"name": "Cache.reduce"
+							}
+						},
+						{
+							"id": 183,
+							"name": "set",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 184,
+									"name": "set",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Adds a key to the proxy if it wasn't previously added and exists in the {@link Map} object.",
+										"returns": "The modified {@link ProxyCache}.\n"
+									},
+									"parameters": [
+										{
+											"id": 185,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The key of the element to add to the proxy object."
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "K"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"overwrites": {
+										"type": "reference",
+										"id": 148,
+										"name": "Map.set"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 62,
+									"character": 11
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"id": 148,
+								"name": "Map.set"
+							}
+						},
+						{
+							"id": 281,
+							"name": "some",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 282,
+									"name": "some",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Tests if some entries in this cache meets a condition"
+									},
+									"parameters": [
+										{
+											"id": 283,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The function to test the condition"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 284,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 285,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 286,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 287,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 288,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 131,
+															"character": 16
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 289,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 72,
+										"name": "Cache.some"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 131,
+									"character": 12
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 72,
+								"name": "Cache.some"
+							}
+						},
+						{
+							"id": 317,
+							"name": "sort",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 318,
+									"name": "sort",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Sorts entries in-place in this Cache"
+									},
+									"parameters": [
+										{
+											"id": 319,
+											"name": "compareFunction",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function to determine how this Cache should be sorted\n"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 320,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 321,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 322,
+																	"name": "v0",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 323,
+																	"name": "v1",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 324,
+																	"name": "k0",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 325,
+																	"name": "k1",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 193,
+															"character": 29
+														}
+													]
+												}
+											},
+											"defaultValue": "(first, second): number => +(first > second) || +(first === second) - 1"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 110,
+										"name": "Cache.sort"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 193,
+									"character": 12
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 110,
+								"name": "Cache.sort"
+							}
+						},
+						{
+							"id": 326,
+							"name": "sorted",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 327,
+									"name": "sorted",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Sorts entries in a new Cache"
+									},
+									"parameters": [
+										{
+											"id": 328,
+											"name": "compareFunction",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function to determine how the resulting Cache should be sorted\n"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 329,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 330,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 331,
+																	"name": "v0",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 332,
+																	"name": "v1",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 333,
+																	"name": "k0",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 334,
+																	"name": "k1",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isOptional": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 205,
+															"character": 31
+														}
+													]
+												}
+											},
+											"defaultValue": "(first, second): number => +(first > second) || +(first === second) - 1"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "K"
+											},
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "Cache"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 119,
+										"name": "Cache.sorted"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 205,
+									"character": 14
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 119,
+								"name": "Cache.sorted"
+							}
+						},
+						{
+							"id": 253,
+							"name": "sweep",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 254,
+									"name": "sweep",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Sweeps entries from this Cache"
+									},
+									"parameters": [
+										{
+											"id": 255,
+											"name": "fn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Function used to determine what entries are swept"
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 256,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 257,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 258,
+																	"name": "value",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "V"
+																	}
+																},
+																{
+																	"id": 259,
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "typeParameter",
+																		"name": "K"
+																	}
+																},
+																{
+																	"id": 260,
+																	"name": "map",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "this"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/Cache.ts",
+															"line": 91,
+															"character": 17
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 261,
+											"name": "thisArg",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"text": "Optional binding for the fn param\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 44,
+										"name": "Cache.sweep"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/Cache.ts",
+									"line": 91,
+									"character": 13
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 44,
+								"name": "Cache.sweep"
+							}
+						},
+						{
+							"id": 206,
+							"name": "values",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 207,
+									"name": "values",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Returns a new Iterator object that contains the values for each element in the {@link Map} object contained in\nthe proxy in insertion order"
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "IterableIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/ProxyCache.ts",
+									"line": 131,
+									"character": 15
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								169
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								167,
+								168
+							]
+						},
+						{
+							"title": "Accessors",
+							"kind": 262144,
+							"children": [
+								175,
+								214,
+								218,
+								216,
+								220,
+								224,
+								222,
+								173,
+								208
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								200,
+								189,
+								212,
+								311,
+								186,
+								202,
+								314,
+								290,
+								262,
+								226,
+								235,
+								244,
+								191,
+								177,
+								180,
+								204,
+								271,
+								299,
+								183,
+								281,
+								317,
+								326,
+								253,
+								206
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/ProxyCache.ts",
+							"line": 8,
+							"character": 23
+						},
+						{
+							"fileName": "src/ProxyCache.ts",
+							"line": 143,
+							"character": 27
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 2,
+							"typeArguments": [
+								{
+									"type": "typeParameter",
+									"name": "K"
+								},
+								{
+									"type": "typeParameter",
+									"name": "V"
+								}
+							],
+							"name": "Cache"
+						}
+					],
+					"implementedTypes": [
 						{
 							"type": "reference",
 							"id": 153,
@@ -3019,7 +6479,56 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						2
+						164
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/ProxyCache.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 335,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/cache/cache/src/index.ts",
+			"children": [
+				{
+					"id": 336,
+					"name": "Cache",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 2
+				},
+				{
+					"id": 337,
+					"name": "ProxyCache",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 164
+				}
+			],
+			"groups": [
+				{
+					"title": "References",
+					"kind": 16777216,
+					"children": [
+						336,
+						337
 					]
 				}
 			],
@@ -3037,7 +6546,9 @@
 			"title": "Modules",
 			"kind": 1,
 			"children": [
-				1
+				1,
+				163,
+				335
 			]
 		}
 	]
