@@ -108,3 +108,27 @@ ava('clear a proxy', (test): void => {
 	test.is(clone.get('second'), undefined);
 	test.is(clone.size, 0);
 });
+
+// Symbol Iterator
+
+ava('spread instance', (test): void => {
+	test.deepEqual([...proxy], [['first', 'foo'], ['second', 'bar]]);
+});
+
+// entries
+
+ava('spread entries', (test): void => {
+	test.deepEqual([...proxy.entries()], [['first', 'foo'], ['second', 'bar]]);
+});
+
+// keys
+
+ava('spread keys', (test): void => {
+	test.deepEqual([...proxy.keys()], ['first', 'second']);
+});
+
+// values
+
+ava('spread values', (test): void => {
+	test.deepEqual([...proxy.values()], ['foo', 'bar']);
+});
