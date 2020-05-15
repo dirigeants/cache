@@ -14,7 +14,7 @@ export class ProxyCache<K, V> implements Map<K, V> {
 			this.#keys = store.#keys.slice();
 		} else {
 			this.#store = store;
-			this.#keys = keys ?? [];
+			this.#keys = typeof keys === 'undefined' ? [] : keys;
 		}
 	}
 
