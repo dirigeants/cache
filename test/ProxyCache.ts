@@ -112,13 +112,13 @@ ava('clear a proxy', (test): void => {
 // Symbol Iterator
 
 ava('spread instance', (test): void => {
-	test.deepEqual([...proxy], [['first', 'foo'], ['second', 'bar]]);
+	test.deepEqual([...proxy], [['first', 'foo'], ['second', 'bar']]);
 });
 
 // entries
 
 ava('spread entries', (test): void => {
-	test.deepEqual([...proxy.entries()], [['first', 'foo'], ['second', 'bar]]);
+	test.deepEqual([...proxy.entries()], [['first', 'foo'], ['second', 'bar']]);
 });
 
 // keys
