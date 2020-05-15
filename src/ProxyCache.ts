@@ -140,7 +140,6 @@ export class ProxyCache<K, V> implements Map<K, V> {
 
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ProxyCache<K, V> extends Cache<K, V> {
 	clone(): ProxyCache<K, V>;
 }
