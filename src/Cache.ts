@@ -1,5 +1,7 @@
 /**
  * The cache structure Project-Blue uses
+ * @typeParam K The type of the {@link Map} keys.
+ * @typeParam V The type of the {@link Map} values.
  */
 export class Cache<K, V> extends Map<K, V> {
 

@@ -2,6 +2,8 @@ import { Cache } from './Cache';
 
 /**
  * The proxy cache structure Project-Blue uses
+ * @typeParam K The type of the {@link Map} keys.
+ * @typeParam V The type of the {@link Map} values.
  */
 export class ProxyCache<K, V> implements Map<K, V> {
 
