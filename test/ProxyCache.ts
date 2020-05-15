@@ -132,3 +132,18 @@ ava('spread keys', (test): void => {
 ava('spread values', (test): void => {
 	test.deepEqual([...proxy.values()], ['foo', 'bar']);
 });
+
+// forEach
+
+ava('for each', (test): void => {
+	const output: unknown[][] = [];
+	proxy.forEach((...args) => output.push(args));
+
+	test.deepEqual(output, [['foo', 'first', proxy], ['bar', 'second', proxy]]);
+});
+
+// @@toStringTag
+
+ava('@@toStringTag', (test): void => {
+	test.is(proxy[Symbol.toStringTag], 'Map');
+});
