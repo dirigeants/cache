@@ -1,6 +1,6 @@
 import ava from 'ava';
-import { ProxyCache } from '../dist';
-import { inspect } from 'util';
+import { ProxyCache, Cache } from '../dist';
+import { inspect, InspectOptions } from 'util';
 
 const cache = new Map([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
 const proxy = new ProxyCache(cache, ['first', 'second']);
@@ -152,17 +152,29 @@ ava('@@toStringTag', (test): void => {
 // inspect
 
 ava('inspect negative depth', (test): void => {
-	test.is(inspect(proxy, { depth: -1 }), '[ProxyCache [Map]]');
+	const options: InspectOptions = { depth: -1 };
+	const actual = inspect(proxy, options);
+	const expected = inspect(new Cache(proxy.entries()), options).replace('Cache', 'ProxyCache');
+	test.is(actual, expected);
 });
 
 ava('inspect depth zero', (test): void => {
-	test.is(inspect(proxy, { depth: 0, colors: false }), "ProxyCache(2) [Map] { 'first' => 'foo', 'second' => 'bar' }");
+	const options: InspectOptions = { depth: 0 };
+	const actual = inspect(proxy, options);
+	const expected = inspect(new Cache(proxy.entries()), options).replace('Cache', 'ProxyCache');
+	test.is(actual, expected);
 });
 
 ava('inspect depth zero empty', (test): void => {
-	test.is(inspect(emptyProxy, { depth: 0, colors: false }), 'ProxyCache(0) [Map] {}');
+	const options: InspectOptions = { depth: 0 };
+	const actual = inspect(emptyProxy, options);
+	const expected = inspect(new Cache(emptyProxy.entries()), options).replace('Cache', 'ProxyCache');
+	test.is(actual, expected);
 });
 
 ava('inspect depth short', (test): void => {
-	test.is(inspect(proxy, { depth: 0, colors: false, breakLength: 40 }), "ProxyCache(2) [Map] {\n  'first' => 'foo',\n  'second' => 'bar'\n}");
+	const options: InspectOptions = { depth: 0, breakLength: 40 };
+	const actual = inspect(proxy, options);
+	const expected = inspect(new Cache(proxy.entries()), options).replace('Cache', 'ProxyCache');
+	test.is(actual, expected);
 });
