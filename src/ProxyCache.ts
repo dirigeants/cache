@@ -142,7 +142,7 @@ export class ProxyCache<K, V> implements Map<K, V> {
 	 */
 	public [inspect.custom](_depth: number, options: InspectOptionsStylized): string {
 		const cache = Object.assign(new Cache(this.entries()), this);
-		return inspect(cache, options).replace('Cache', this.constructor.name);
+		return inspect(cache, options).replace(Cache.name, this.constructor.name);
 	}
 
 	public static get [Symbol.species](): typeof ProxyCache {
