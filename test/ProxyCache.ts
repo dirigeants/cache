@@ -152,7 +152,7 @@ ava('@@toStringTag', (test): void => {
 // inspect
 
 ava('inspect negative depth', (test): void => {
-	test.is(inspect(proxy, { depth: -1 }), '[ProxyCache]');
+	test.is(inspect(proxy, { depth: -1 }), '[ProxyCache [Map]]');
 });
 
 ava('inspect depth zero', (test): void => {

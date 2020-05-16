@@ -140,27 +140,9 @@ export class ProxyCache<K, V> implements Map<K, V> {
 	 * @param depth The depth of the inspect
 	 * @param options The custom inspection options
 	 */
-	public [inspect.custom](depth: number, options: InspectOptionsStylized): string {
-		if (depth < 0) return `[${this.constructor.name}]`;
-
-		const { name } = this.constructor;
-		const size = this.size.toString();
-		const tag = this[Symbol.toStringTag];
-		const header = `${name}(${size}) [${tag}] {`;
-		if (this.size === 0) return `${header}}`;
-
-		const entries: string[] = [];
-		for (const [key, value] of this.entries()) {
-			const formattedKey = inspect(key, { ...options, depth: -1 });
-			const formattedValue = inspect(value, { ...options, depth: depth - 1 }).replace(/\n/g, `\n  `);
-			entries.push(`${formattedKey} => ${formattedValue}`);
-		}
-
-		const containsNewLine = entries.some(entry => entry.includes('\n'));
-		const isOutputTooLong = containsNewLine || header.length + entries.reduce((acc, entry) => acc + entry.length + 2, 0) >= options.breakLength;
-		return `${header}${isOutputTooLong ?
-			`\n  ${entries.join(',\n  ')}\n}` :
-			` ${entries.join(', ')} }`}`;
+	public [inspect.custom](_depth: number, options: InspectOptionsStylized): string {
+		const cache = Object.assign(new Cache(this.entries()), this);
+		return inspect(cache, options).replace('Cache', this.constructor.name);
 	}
 
 	public static get [Symbol.species](): typeof ProxyCache {
