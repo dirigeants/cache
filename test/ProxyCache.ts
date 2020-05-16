@@ -178,3 +178,22 @@ ava('inspect depth short', (test): void => {
 	const expected = inspect(new Cache(proxy.entries()), options).replace('Cache', 'ProxyCache');
 	test.is(actual, expected);
 });
+
+ava('inspect extended with properties', (test): void => {
+	class ExtendedProxyCache<K, V> extends ProxyCache<K, V> {
+
+		public myBeautifulProperty = 'aaaa';
+
+	}
+
+	class ExtendedCache<K, V> extends Cache<K, V> {
+
+		public myBeautifulProperty = 'aaaa';
+
+	}
+
+	const options: InspectOptions = { depth: 0 };
+	const actual = inspect(new ExtendedProxyCache(proxy), options);
+	const expected = inspect(new ExtendedCache(proxy.entries()), options).replace('ExtendedCache', 'ExtendedProxyCache');
+	test.is(actual, expected);
+});
