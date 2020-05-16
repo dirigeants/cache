@@ -1,5 +1,6 @@
 import ava from 'ava';
 import { ProxyCache } from '../dist';
+import { inspect } from 'util';
 
 const cache = new Map([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
 const proxy = new ProxyCache(cache, ['first', 'second']);
@@ -146,4 +147,22 @@ ava('for each', (test): void => {
 
 ava('@@toStringTag', (test): void => {
 	test.is(proxy[Symbol.toStringTag], 'Map');
+});
+
+// inspect
+
+ava('inspect negative depth', (test): void => {
+	test.is(inspect(proxy, { depth: -1 }), '[ProxyCache]');
+});
+
+ava('inspect depth zero', (test): void => {
+	test.is(inspect(proxy, { depth: 0, colors: false }), "ProxyCache(2) [Map] { 'first' => 'foo', 'second' => 'bar' }");
+});
+
+ava('inspect depth zero empty', (test): void => {
+	test.is(inspect(emptyProxy, { depth: 0, colors: false }), 'ProxyCache(0) [Map] {}');
+});
+
+ava('inspect depth short', (test): void => {
+	test.is(inspect(proxy, { depth: 0, colors: false, breakLength: 40 }), "ProxyCache(2) [Map] {\n  'first' => 'foo',\n  'second' => 'bar'\n}");
 });
