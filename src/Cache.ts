@@ -52,7 +52,7 @@ export class Cache<K, V> extends Map<K, V> {
 	 * @param fn Function used to find what you are looking for
 	 * @param thisArg Optional binding for the fn param
 	 */
-	public find(fn: (value: V, key: K, map: this) => boolean, thisArg?: any): [K, V] | void {
+	public find(fn: (value: V, key: K, map: this) => boolean, thisArg?: any): [K, V] | undefined {
 		if (typeof thisArg !== 'undefined') fn = fn.bind(thisArg);
 
 		for (const [key, val] of this) if (fn(val, key, this)) return [key, val];
@@ -64,7 +64,7 @@ export class Cache<K, V> extends Map<K, V> {
 	 * @param fn Function used to find what you are looking for
 	 * @param thisArg Optional binding for the fn param
 	 */
-	public findKey(fn: (value: V, key: K, map: this) => boolean, thisArg?: any): K | void {
+	public findKey(fn: (value: V, key: K, map: this) => boolean, thisArg?: any): K | undefined {
 		if (typeof thisArg !== 'undefined') fn = fn.bind(thisArg);
 
 		for (const [key, val] of this) if (fn(val, key, this)) return key;
@@ -76,7 +76,7 @@ export class Cache<K, V> extends Map<K, V> {
 	 * @param fn Function used to find what you are looking for
 	 * @param thisArg Optional binding for the fn param
 	 */
-	public findValue(fn: (value: V, key: K, map: this) => boolean, thisArg?: any): V | void {
+	public findValue(fn: (value: V, key: K, map: this) => boolean, thisArg?: any): V | undefined {
 		if (typeof thisArg !== 'undefined') fn = fn.bind(thisArg);
 
 		for (const [key, val] of this) if (fn(val, key, this)) return val;
