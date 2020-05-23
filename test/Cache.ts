@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { Cache } from '../dist';
+import { Cache } from '../src';
 
 const cache = new Cache([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
 const emptyCache: Cache<string, string> = new Cache();
