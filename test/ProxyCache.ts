@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { ProxyCache } from '../dist';
+import { ProxyCache } from '../src';
 
 const cache = new Map([['first', 'foo'], ['second', 'bar'], ['third', 'baz']]);
 const proxy = new ProxyCache(cache, ['first', 'second']);
