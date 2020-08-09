@@ -7,7 +7,7 @@
 	"children": [
 		{
 			"id": 1,
-			"name": "\"src/Cache\"",
+			"name": "\"Cache\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
@@ -3053,7 +3053,7 @@
 		},
 		{
 			"id": 163,
-			"name": "\"src/ProxyCache\"",
+			"name": "\"ProxyCache\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
@@ -6493,7 +6493,7 @@
 		},
 		{
 			"id": 335,
-			"name": "\"src/index\"",
+			"name": "\"index\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
@@ -6539,225 +6539,6 @@
 					"character": 0
 				}
 			]
-		},
-		{
-			"id": 338,
-			"name": "\"test/Cache\"",
-			"kind": 1,
-			"kindString": "Module",
-			"flags": {
-				"isExported": true
-			},
-			"originalName": "/home/runner/work/cache/cache/test/Cache.ts",
-			"children": [
-				{
-					"id": 339,
-					"name": "cache",
-					"kind": 32,
-					"kindString": "Variable",
-					"flags": {
-						"isConst": true
-					},
-					"sources": [
-						{
-							"fileName": "test/Cache.ts",
-							"line": 4,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 2,
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "string"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						],
-						"name": "Cache"
-					},
-					"defaultValue": "new Cache([['first', 'foo'], ['second', 'bar'], ['third', 'baz']])"
-				},
-				{
-					"id": 340,
-					"name": "emptyCache",
-					"kind": 32,
-					"kindString": "Variable",
-					"flags": {
-						"isConst": true
-					},
-					"sources": [
-						{
-							"fileName": "test/Cache.ts",
-							"line": 5,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 2,
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "string"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						],
-						"name": "Cache"
-					},
-					"defaultValue": "new Cache()"
-				}
-			],
-			"groups": [
-				{
-					"title": "Variables",
-					"kind": 32,
-					"children": [
-						339,
-						340
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "test/Cache.ts",
-					"line": 1,
-					"character": 0
-				}
-			]
-		},
-		{
-			"id": 341,
-			"name": "\"test/ProxyCache\"",
-			"kind": 1,
-			"kindString": "Module",
-			"flags": {
-				"isExported": true
-			},
-			"originalName": "/home/runner/work/cache/cache/test/ProxyCache.ts",
-			"children": [
-				{
-					"id": 342,
-					"name": "cache",
-					"kind": 32,
-					"kindString": "Variable",
-					"flags": {
-						"isConst": true
-					},
-					"sources": [
-						{
-							"fileName": "test/ProxyCache.ts",
-							"line": 4,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 153,
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "string"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						],
-						"name": "Map"
-					},
-					"defaultValue": "new Map([['first', 'foo'], ['second', 'bar'], ['third', 'baz']])"
-				},
-				{
-					"id": 344,
-					"name": "emptyProxy",
-					"kind": 32,
-					"kindString": "Variable",
-					"flags": {
-						"isConst": true
-					},
-					"sources": [
-						{
-							"fileName": "test/ProxyCache.ts",
-							"line": 6,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 164,
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "string"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						],
-						"name": "ProxyCache"
-					},
-					"defaultValue": "new ProxyCache(cache)"
-				},
-				{
-					"id": 343,
-					"name": "proxy",
-					"kind": 32,
-					"kindString": "Variable",
-					"flags": {
-						"isConst": true
-					},
-					"sources": [
-						{
-							"fileName": "test/ProxyCache.ts",
-							"line": 5,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 164,
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "string"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						],
-						"name": "ProxyCache"
-					},
-					"defaultValue": "new ProxyCache(cache, ['first', 'second'])"
-				}
-			],
-			"groups": [
-				{
-					"title": "Variables",
-					"kind": 32,
-					"children": [
-						342,
-						344,
-						343
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "test/ProxyCache.ts",
-					"line": 1,
-					"character": 0
-				}
-			]
 		}
 	],
 	"groups": [
@@ -6767,9 +6548,7 @@
 			"children": [
 				1,
 				163,
-				335,
-				338,
-				341
+				335
 			]
 		}
 	]
