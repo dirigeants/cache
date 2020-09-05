@@ -2025,7 +2025,11 @@
 															],
 															"type": {
 																"type": "typeParameter",
-																"name": "T"
+																"name": "T",
+																"default": {
+																	"type": "intrinsic",
+																	"name": "any"
+																}
 															}
 														}
 													],
@@ -2061,7 +2065,11 @@
 										"type": "array",
 										"elementType": {
 											"type": "typeParameter",
-											"name": "T"
+											"name": "T",
+											"default": {
+												"type": "intrinsic",
+												"name": "any"
+											}
 										}
 									}
 								}
@@ -5395,7 +5403,11 @@
 															],
 															"type": {
 																"type": "typeParameter",
-																"name": "T"
+																"name": "T",
+																"default": {
+																	"type": "intrinsic",
+																	"name": "any"
+																}
 															}
 														}
 													],
@@ -5431,7 +5443,11 @@
 										"type": "array",
 										"elementType": {
 											"type": "typeParameter",
-											"name": "T"
+											"name": "T",
+											"default": {
+												"type": "intrinsic",
+												"name": "any"
+											}
 										}
 									},
 									"inheritedFrom": {
