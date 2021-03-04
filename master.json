@@ -65,7 +65,7 @@
 							"sources": [
 								{
 									"fileName": "node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-									"line": 130,
+									"line": 135,
 									"character": 33
 								}
 							],
